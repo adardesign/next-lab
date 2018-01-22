@@ -12,10 +12,16 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <style>{`body { margin: 0 } /* custom! */`}</style>
+          <meta httpEquiv='X-UA-Compatible' content='IE=edge,chrome=1'/>
+          <script dangerouslySetInnerHTML={{ __html: `document.cookie="a=p; path=/",window.adrma={}; window.isMobile=/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)`}}></script>
+          <meta charset='utf-8'/>
+          <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400' />
+          <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:700' />
+          <link rel='stylesheet' href='https://www.adorama.com/Als.Mvc/nspc/combres.axd/AD_MainCss/-/?svfor=1day&svcfor=1day&cacheVersion=391&ID=10166' />
+          <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' />
+          <link rel='stylesheet' href='https://www.adorama.com/Als.Mvc/nspc/combres.axd/AD_RevisedTopCategoryPageCss/-/?svfor=1day&svcfor=1day&cacheVersion=391&ID=10166' />
         </Head>
-        <body className="custom_class">
-          {this.props.customValue}
+        <body>
           <Main />
           <NextScript />
         </body>

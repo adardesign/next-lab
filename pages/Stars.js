@@ -1,4 +1,5 @@
 import fetch from "isomorphic-unfetch" 
+
 const Stars = ({ stars }) =>
   <div>
     Next stars: {stars}
